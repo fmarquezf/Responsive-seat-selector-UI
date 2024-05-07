@@ -1,0 +1,17 @@
+---
+import Screen from "./Screen.astro";
+import Reserve from "./Reserve.jsx"
+import SeatDistribution from "./SeatDistribution.jsx"
+import BackButton from "./BackButton.jsx"
+import SeatInformation from "./SeatInformation.astro";
+
+---
+    <div class=" flex flex-col justify-center min-h-screen">
+        <Screen />
+        <SeatDistribution client:load/>
+        <div class="flex justify-center gap-4">
+            <BackButton client:load/>
+            <Reserve client:load/>
+        </div>
+        <SeatInformation /> 
+    </div>
