@@ -26,7 +26,7 @@ export default function App() {
       <div>
         <Button seats={seatStore} onPress={onOpen} isDisabled={Disabled}  color="primary" className=" font-bold" startContent={<div className="flex justify-center items-center relative"><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-armchair" width="26" height="26" viewBox="0 0 22 21" strokeWidth="1" stroke="currentColor" fill='#3b82f6' strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 11a2 2 0 0 1 2 2v2h10v-2a2 2 0 1 1 4 0v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /><path d="M5 11v-5a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v5 M5 11a2 2 0 0 1 2 2v2h10v-2a2 2 0 0 1 2 -2" /></svg>
           <span className=" text-xs text-white absolute top-[3px] translate-x-[1.5px] font-medium text-center select-none">{!Disabled && seatStore}</span></div> }>
-          Reserve seat{seatStore > 1 && 's'}
+          Book seat{seatStore > 1 && 's'}
         </Button>
       </div>
         
